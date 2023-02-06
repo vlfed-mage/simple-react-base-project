@@ -1,39 +1,37 @@
-@use "sass:math";
 
 //== Colors
 
 $base:                  #fff !default;
 $grayBase:              #000 !default;
 
-$grayDarker:            #313131 !default;
-$grayDark:              #666565 !default;
-$gray:                  #A3A2A2 !default;
-$grayLight:             #bbb !default;
-$grayLighter:           #F7F5F4 !default;
 
-$brandPrimary:          tomato !default;
+$gray:                  #aaa !default;
 
-$overlayColor:          rgba(49, 49, 49, 0.4) !default;
-$boxShadow:             0 4px 16px rgba(245, 87, 84, 0.16) !default;
+
+$brandPrimary:          #399EFE !default;
+$brandYellow:           #FEDC01 !default;
+$brandGreen:            #80BA27 !default;
+$brandRed:              #DF1921 !default;
+
+$overlayColor:          rgba(0, 0, 0, 0.5) !default;
+$boxShadow:             0 4px 16px rgba(0, 0, 0, 0.16) !default;
 
 
 //== Reset
 
 $bodyBg:                $base !default;
-$textColor:             $grayDark !default;
+$textColor:             $grayBase !default;
 $linkColor:             $brandPrimary !default;
 
-$borderColor:           $grayLighter !default;
+$borderColor:           $gray !default;
 
 
 //== Typography
 
-$fontFamilyBase:        'Corsica LX', sans-serif !default;
-$fontFamilyBaseBook:    'Corsica LX Book', sans-serif !default;
-$fontFamilySecondary:   'Legan', sans-serif !default;
+$fontFamilyBase:        'Arial', sans-serif !default;
 
-$fontSizeSmall:         14px !default;
-$fontSizeBase:          16px !default;
+$fontSizeSmall:         12px !default;
+$fontSizeBase:          14px !default;
 $fontSizeLarge:         18px !default;
 
 $fontSize64:            64px !default;
@@ -44,14 +42,91 @@ $fontSize32:            32px !default;
 $fontSize28:            28px !default;
 $fontSize24:            24px !default;
 $fontSize21:            21px !default;
-$fontSize12:            12px !default;
+$fontSize16:            16px !default;
 $fontSize10:            10px !default;
 
-$lineHeightBase:        math.div(18, 12) !default;
+$lineHeightBase:        1.5 !default;
 
 
 //== Media queries breakpoints
 
+$screen_min_375:        375px !default;
+$screen_min_414:        414px !default;
+$screen_min_480:        480px !default;
+$screen_min_600:        600px !default;
+$screen_min_640:        640px !default;
 $screen_min_768:        768px !default;
-$screen_min_1024:       1024px !default;
+$screen_min_854:        854px !default;
+$screen_min_960:        960px !default;
+$screen_min_1080:       1080px !default;
+$screen_min_1200:       1200px !default;
+$screen_min_1280:       1280px !default;
+$screen_min_1320:       1320px !default;
 $screen_min_1440:       1440px !default;
+$screen_min_1560:       1560px !default;
+$screen_min_1680:       1680px !default;
+$screen_min_1800:       1800px !default;
+$screen_min_1920:       1920px !default;
+
+//== Media queries breakpoints for forms
+
+$min-s:                 $screen_min_768;
+$min-m:                 $screen_min_1080;
+$min-l:                 $screen_min_1440;
+
+
+
+//== root
+
+:root {
+    //== Form templates
+    --formGridGap: 12px;
+    --formBorderRadius: 8px;
+    --formControlHeight: 40px;
+    --checkboxSize: 26px;
+    --formSectionDivider: 1;
+
+    //== Section templates
+    --sectionsGap: 24px;
+
+    //== Quantity templates
+    --quantityHeight: 32px;
+
+    //== Container templates
+    --container: 1530px;
+    --containerGutter: 30px;
+
+    //== Aside templates
+    --asideWidth: 290px;
+
+    //== Header templates
+    --mainHeaderHeight: 56px;
+    --secondaryHeaderHeight: 24px;
+
+    //== Catalog grid
+    --catalogGrid: 2;
+
+    @media (min-width: $screen_min_640) {
+        //== Catalog grid
+        --catalogGrid: 3;
+    }
+
+    @media (min-width: $screen_min_1080) {
+        //== Form templates
+        --formControlHeight: 56px;
+
+        //== Section templates
+        --sectionsGap: 40px;
+
+        //== Header templates
+        --mainHeaderHeight: 80px;
+    }
+
+    @media (min-width: $screen_min_1320) {
+        //== Catalog grid
+        --catalogGrid: 4;
+    }
+
+    --globalTopIndent: var(--mainHeaderHeight);
+    --globalRightIndent: 0;
+}

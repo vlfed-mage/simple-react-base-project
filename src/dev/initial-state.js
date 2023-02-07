@@ -1,5 +1,7 @@
 const initialState = {
-    staff: []
+    people: [],
+    planets: [],
+    starships: []
 };
 
 export default initialState;

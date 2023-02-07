@@ -11,6 +11,15 @@ const storeServices = () => {
 
             return response.json();
         },
+        getItem: async (name, id) => {
+            const response = await fetch(`${ bodyUrl }${ name }/${ id }`);
+
+            if (!response.ok) {
+                throw new Error(`Something get terrible wrong. Status: ${ response.status }`)
+            }
+
+            return response.json();
+        },
         updateItem: async (name, id, payload) => {
             const response = await fetch(`${ bodyUrl }${ name }/${ id }`, {
                 method: 'PUT',

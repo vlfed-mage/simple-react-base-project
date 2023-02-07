@@ -1,8 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/css';
 
-import ErrorIndicator from '../error-indicator';
-import LoadingIndicator from '../loading-indicator';
 import CatalogList from '../catalog-list';
 
 const appStyles = css`
@@ -21,7 +19,9 @@ const appStyles = css`
 const App = () => {
     return (
         <div className={ appStyles }>
-            <CatalogList />
+            <CatalogList name='people' />
+            <CatalogList name='planets' />
+            <CatalogList name='starships' />
         </div>
     );
 };

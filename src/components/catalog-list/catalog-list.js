@@ -7,15 +7,15 @@ import * as actions from '../../dev/actions';
 import LoadingIndicator from '../loading-indicator';
 import ErrorIndicator from '../error-indicator';
 
-const CatalogList = ({ people, loading, error, ...rest }) => {
+const CatalogList = ({ name, people, loading, error, ...rest }) => {
     const { getCollection } = storeServices();
-    const { peopleLoaded, peopleRequested, peopleError } = rest;
+    const { dataLoaded, dataRequested, dataError } = rest;
 
     useEffect(() => {
-        peopleRequested();
-        getCollection('people')
-            .then((data) => peopleLoaded(data))
-            .catch((error) => peopleError(error))
+        dataRequested(name);
+        getCollection(name)
+            .then((data) => dataLoaded(name, data))
+            .catch((error) => dataError(name, error))
     }, []);
 
     if (loading) {

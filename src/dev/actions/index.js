@@ -1,11 +1,11 @@
 import {
-    peopleRequested,
-    peopleLoaded,
-    peopleError
+    dataRequested,
+    dataLoaded,
+    dataError
 } from './actions';
 
 export {
-    peopleRequested,
-    peopleLoaded,
-    peopleError
+    dataRequested,
+    dataLoaded,
+    dataError
 };

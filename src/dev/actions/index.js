@@ -1,16 +1,11 @@
-import * as actionTypes from '../action-types';
-
-const {
-    FETCH_PEOPLE,
-} = actionTypes,
-
-fetchPeople = (newPeople) => {
-    return {
-        type: FETCH_PEOPLE,
-        payload: newPeople
-    }
-};
+import {
+    peopleRequested,
+    peopleLoaded,
+    peopleError
+} from './actions';
 
 export {
-    fetchPeople,
-}
+    peopleRequested,
+    peopleLoaded,
+    peopleError
+};

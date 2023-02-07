@@ -1,52 +1,1746 @@
 {
-  "products": [
+  "people": [
     {
-      "id": "the-wedge",
-      "name": "The Wedge",
-      "description": "Tasty sandwich to max your tastebuds.",
-      "price": 699
+      "name": "Luke Skywalker",
+      "height": "172",
+      "mass": "77",
+      "hair_color": "blond",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "19BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/14/",
+        "http://localhost:5000/api/vehicles/30/"
+      ],
+      "starships": [
+        "http://localhost:5000/api/starships/12/",
+        "http://localhost:5000/api/starships/22/"
+      ],
+      "created": "2014-12-09T13:50:51.644000Z",
+      "edited": "2014-12-20T21:17:56.891000Z",
+      "url": "http://localhost:5000/api/people/1/",
+      "id": "luke-skywalker"
     },
     {
-      "id": "spice-dog",
-      "name": "Spice Dog",
-      "description": "Prepare the spice, it's very nice.",
-      "price": 799
+      "name": "C-3PO",
+      "height": "167",
+      "mass": "75",
+      "hair_color": "n/a",
+      "skin_color": "gold",
+      "eye_color": "yellow",
+      "birth_year": "112BBY",
+      "gender": "n/a",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/2/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:10:51.357000Z",
+      "edited": "2014-12-20T21:17:50.309000Z",
+      "url": "http://localhost:5000/api/people/2/",
+      "id": "c-3po"
     },
     {
-      "id": "french-fries",
-      "name": "French Fries",
-      "description": "That side you've been missing.",
-      "price": 499
+      "name": "R2-D2",
+      "height": "96",
+      "mass": "32",
+      "hair_color": "n/a",
+      "skin_color": "white, blue",
+      "eye_color": "red",
+      "birth_year": "33BBY",
+      "gender": "n/a",
+      "homeworld": "http://localhost:5000/api/planets/8/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/2/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:11:50.376000Z",
+      "edited": "2014-12-20T21:17:50.311000Z",
+      "url": "http://localhost:5000/api/people/3/",
+      "id": "r2-d2"
     },
     {
-      "id": "soulless-salad",
-      "name": "Soul-less Salad",
-      "description": "Just in case you're peckish.",
-      "price": 649
+      "name": "Darth Vader",
+      "height": "202",
+      "mass": "136",
+      "hair_color": "none",
+      "skin_color": "white",
+      "eye_color": "yellow",
+      "birth_year": "41.9BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/13/"
+      ],
+      "created": "2014-12-10T15:18:20.704000Z",
+      "edited": "2014-12-20T21:17:50.313000Z",
+      "url": "http://localhost:5000/api/people/4/",
+      "id": "darth-vader"
     },
     {
-      "id": "cola-cola",
-      "name": "Cola Cola",
-      "description": "Get that sugar rush, pronto.",
-      "price": 399
+      "name": "Leia Organa",
+      "height": "150",
+      "mass": "49",
+      "hair_color": "brown",
+      "skin_color": "light",
+      "eye_color": "brown",
+      "birth_year": "19BBY",
+      "gender": "female",
+      "homeworld": "http://localhost:5000/api/planets/2/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/30/"
+      ],
+      "starships": [],
+      "created": "2014-12-10T15:20:09.791000Z",
+      "edited": "2014-12-20T21:17:50.315000Z",
+      "url": "http://localhost:5000/api/people/5/",
+      "id": "leia-organa"
     },
     {
-      "id": "big-slurp",
-      "name": "Big Slurp",
-      "description": "It really is a big drink.",
-      "price": 449
+      "name": "Owen Lars",
+      "height": "178",
+      "mass": "120",
+      "hair_color": "brown, grey",
+      "skin_color": "light",
+      "eye_color": "blue",
+      "birth_year": "52BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:52:14.024000Z",
+      "edited": "2014-12-20T21:17:50.317000Z",
+      "url": "http://localhost:5000/api/people/6/",
+      "id": "owen-lars"
     },
     {
-      "id": "wild-water",
-      "name": "Wild Water",
-      "description": "Spring water, wild and watery.",
-      "price": 299
+      "name": "Beru Whitesun lars",
+      "height": "165",
+      "mass": "75",
+      "hair_color": "brown",
+      "skin_color": "light",
+      "eye_color": "blue",
+      "birth_year": "47BBY",
+      "gender": "female",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:53:41.121000Z",
+      "edited": "2014-12-20T21:17:50.319000Z",
+      "url": "http://localhost:5000/api/people/7/",
+      "id": "beru-whitesun-lars"
     },
     {
-      "id": "big-cheese",
-      "name": "Big Cheese",
-      "price": 899,
-      "description": "Large burger, all the cheese."
+      "name": "R5-D4",
+      "height": "97",
+      "mass": "32",
+      "hair_color": "n/a",
+      "skin_color": "white, red",
+      "eye_color": "red",
+      "birth_year": "unknown",
+      "gender": "n/a",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/2/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T15:57:50.959000Z",
+      "edited": "2014-12-20T21:17:50.321000Z",
+      "url": "http://localhost:5000/api/people/8/",
+      "id": "r5-d4"
+    },
+    {
+      "name": "Biggs Darklighter",
+      "height": "183",
+      "mass": "84",
+      "hair_color": "black",
+      "skin_color": "light",
+      "eye_color": "brown",
+      "birth_year": "24BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/12/"
+      ],
+      "created": "2014-12-10T15:59:50.509000Z",
+      "edited": "2014-12-20T21:17:50.323000Z",
+      "url": "http://localhost:5000/api/people/9/",
+      "id": "biggs-darklighter"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "height": "182",
+      "mass": "77",
+      "hair_color": "auburn, white",
+      "skin_color": "fair",
+      "eye_color": "blue-gray",
+      "birth_year": "57BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/20/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/38/"
+      ],
+      "starships": [
+        "http://localhost:5000/api/starships/48/",
+        "http://localhost:5000/api/starships/59/",
+        "http://localhost:5000/api/starships/64/",
+        "http://localhost:5000/api/starships/65/",
+        "http://localhost:5000/api/starships/74/"
+      ],
+      "created": "2014-12-10T16:16:29.192000Z",
+      "edited": "2014-12-20T21:17:50.325000Z",
+      "url": "http://localhost:5000/api/people/10/",
+      "id": "obi-wan-kenobi"
+    },
+    {
+      "name": "Anakin Skywalker",
+      "height": "188",
+      "mass": "84",
+      "hair_color": "blond",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "41.9BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/1/",
+      "films": [
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/44/",
+        "http://localhost:5000/api/vehicles/46/"
+      ],
+      "starships": [
+        "http://localhost:5000/api/starships/39/",
+        "http://localhost:5000/api/starships/59/",
+        "http://localhost:5000/api/starships/65/"
+      ],
+      "created": "2014-12-10T16:20:44.310000Z",
+      "edited": "2014-12-20T21:17:50.327000Z",
+      "url": "http://localhost:5000/api/people/11/",
+      "id": "anakin-skywalker"
+    },
+    {
+      "name": "Wilhuff Tarkin",
+      "height": "180",
+      "mass": "unknown",
+      "hair_color": "auburn, grey",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "64BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/21/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T16:26:56.138000Z",
+      "edited": "2014-12-20T21:17:50.330000Z",
+      "url": "http://localhost:5000/api/people/12/",
+      "id": "wilhuff-tarkin"
+    },
+    {
+      "name": "Chewbacca",
+      "height": "228",
+      "mass": "112",
+      "hair_color": "brown",
+      "skin_color": "unknown",
+      "eye_color": "blue",
+      "birth_year": "200BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/14/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/3/"
+      ],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/19/"
+      ],
+      "starships": [
+        "http://localhost:5000/api/starships/10/",
+        "http://localhost:5000/api/starships/22/"
+      ],
+      "created": "2014-12-10T16:42:45.066000Z",
+      "edited": "2014-12-20T21:17:50.332000Z",
+      "url": "http://localhost:5000/api/people/13/",
+      "id": "chewbacca"
+    },
+    {
+      "name": "Han Solo",
+      "height": "180",
+      "mass": "80",
+      "hair_color": "brown",
+      "skin_color": "fair",
+      "eye_color": "brown",
+      "birth_year": "29BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/22/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/10/",
+        "http://localhost:5000/api/starships/22/"
+      ],
+      "created": "2014-12-10T16:49:14.582000Z",
+      "edited": "2014-12-20T21:17:50.334000Z",
+      "url": "http://localhost:5000/api/people/14/",
+      "id": "han-solo"
+    },
+    {
+      "name": "Greedo",
+      "height": "173",
+      "mass": "74",
+      "hair_color": "n/a",
+      "skin_color": "green",
+      "eye_color": "black",
+      "birth_year": "44BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/23/",
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/4/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T17:03:30.334000Z",
+      "edited": "2014-12-20T21:17:50.336000Z",
+      "url": "http://localhost:5000/api/people/15/",
+      "id": "greedo"
+    },
+    {
+      "name": "Jabba Desilijic Tiure",
+      "height": "175",
+      "mass": "1,358",
+      "hair_color": "n/a",
+      "skin_color": "green-tan, brown",
+      "eye_color": "orange",
+      "birth_year": "600BBY",
+      "gender": "hermaphrodite",
+      "homeworld": "http://localhost:5000/api/planets/24/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/5/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-10T17:11:31.638000Z",
+      "edited": "2014-12-20T21:17:50.338000Z",
+      "url": "http://localhost:5000/api/people/16/",
+      "id": "jabba-desilijic-tiure"
+    },
+    {
+      "name": "Wedge Antilles",
+      "height": "170",
+      "mass": "77",
+      "hair_color": "brown",
+      "skin_color": "fair",
+      "eye_color": "hazel",
+      "birth_year": "21BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/22/",
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "species": [],
+      "vehicles": [
+        "http://localhost:5000/api/vehicles/14/"
+      ],
+      "starships": [
+        "http://localhost:5000/api/starships/12/"
+      ],
+      "created": "2014-12-12T11:08:06.469000Z",
+      "edited": "2014-12-20T21:17:50.341000Z",
+      "url": "http://localhost:5000/api/people/18/",
+      "id": "wedge-antilles"
+    },
+    {
+      "name": "Jek Tono Porkins",
+      "height": "180",
+      "mass": "110",
+      "hair_color": "brown",
+      "skin_color": "fair",
+      "eye_color": "blue",
+      "birth_year": "unknown",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/26/",
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/12/"
+      ],
+      "created": "2014-12-12T11:16:56.569000Z",
+      "edited": "2014-12-20T21:17:50.343000Z",
+      "url": "http://localhost:5000/api/people/19/",
+      "id": "jek-tono-porkins"
+    },
+    {
+      "name": "Yoda",
+      "height": "66",
+      "mass": "17",
+      "hair_color": "white",
+      "skin_color": "green",
+      "eye_color": "brown",
+      "birth_year": "896BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/28/",
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/6/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-15T12:26:01.042000Z",
+      "edited": "2014-12-20T21:17:50.345000Z",
+      "url": "http://localhost:5000/api/people/20/",
+      "id": "yoda"
+    },
+    {
+      "name": "Palpatine",
+      "height": "170",
+      "mass": "75",
+      "hair_color": "grey",
+      "skin_color": "pale",
+      "eye_color": "yellow",
+      "birth_year": "82BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/8/",
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-15T12:48:05.971000Z",
+      "edited": "2014-12-20T21:17:50.347000Z",
+      "url": "http://localhost:5000/api/people/21/",
+      "id": "palpatine"
+    },
+    {
+      "name": "Boba Fett",
+      "height": "183",
+      "mass": "78.2",
+      "hair_color": "black",
+      "skin_color": "fair",
+      "eye_color": "brown",
+      "birth_year": "31.5BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/10/",
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/5/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/21/"
+      ],
+      "created": "2014-12-15T12:49:32.457000Z",
+      "edited": "2014-12-20T21:17:50.349000Z",
+      "url": "http://localhost:5000/api/people/22/",
+      "id": "boba-fett"
+    },
+    {
+      "name": "IG-88",
+      "height": "200",
+      "mass": "140",
+      "hair_color": "none",
+      "skin_color": "metal",
+      "eye_color": "red",
+      "birth_year": "15BBY",
+      "gender": "none",
+      "homeworld": "http://localhost:5000/api/planets/28/",
+      "films": [
+        "http://localhost:5000/api/films/2/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/2/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-15T12:51:10.076000Z",
+      "edited": "2014-12-20T21:17:50.351000Z",
+      "url": "http://localhost:5000/api/people/23/",
+      "id": "ig-88"
+    },
+    {
+      "name": "Bossk",
+      "height": "190",
+      "mass": "113",
+      "hair_color": "none",
+      "skin_color": "green",
+      "eye_color": "red",
+      "birth_year": "53BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/29/",
+      "films": [
+        "http://localhost:5000/api/films/2/"
+      ],
+      "species": [
+        "http://localhost:5000/api/species/7/"
+      ],
+      "vehicles": [],
+      "starships": [],
+      "created": "2014-12-15T12:53:49.297000Z",
+      "edited": "2014-12-20T21:17:50.355000Z",
+      "url": "http://localhost:5000/api/people/24/",
+      "id": "bossk"
+    },
+    {
+      "name": "Lando Calrissian",
+      "height": "177",
+      "mass": "79",
+      "hair_color": "black",
+      "skin_color": "dark",
+      "eye_color": "brown",
+      "birth_year": "31BBY",
+      "gender": "male",
+      "homeworld": "http://localhost:5000/api/planets/30/",
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "species": [],
+      "vehicles": [],
+      "starships": [
+        "http://localhost:5000/api/starships/10/"
+      ],
+      "created": "2014-12-15T12:56:32.683000Z",
+      "edited": "2014-12-20T21:17:50.357000Z",
+      "url": "http://localhost:5000/api/people/25/",
+      "id": "lando-calrissian"
+    }
+  ],
+  "planets": [
+    {
+      "name": "Tatooine",
+      "rotation_period": "23",
+      "orbital_period": "304",
+      "diameter": "10465",
+      "climate": "arid",
+      "gravity": "1 standard",
+      "terrain": "desert",
+      "surface_water": "1",
+      "population": "200000",
+      "residents": [
+        "http://localhost:5000/api/people/1/",
+        "http://localhost:5000/api/people/2/",
+        "http://localhost:5000/api/people/4/",
+        "http://localhost:5000/api/people/6/",
+        "http://localhost:5000/api/people/7/",
+        "http://localhost:5000/api/people/8/",
+        "http://localhost:5000/api/people/9/",
+        "http://localhost:5000/api/people/11/",
+        "http://localhost:5000/api/people/43/",
+        "http://localhost:5000/api/people/62/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-09T13:50:49.641000Z",
+      "edited": "2014-12-20T20:58:18.411000Z",
+      "url": "http://localhost:5000/api/planets/1/",
+      "id": "tatooine"
+    },
+    {
+      "name": "Alderaan",
+      "rotation_period": "24",
+      "orbital_period": "364",
+      "diameter": "12500",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "grasslands, mountains",
+      "surface_water": "40",
+      "population": "2000000000",
+      "residents": [
+        "http://localhost:5000/api/people/5/",
+        "http://localhost:5000/api/people/68/",
+        "http://localhost:5000/api/people/81/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T11:35:48.479000Z",
+      "edited": "2014-12-20T20:58:18.420000Z",
+      "url": "http://localhost:5000/api/planets/2/",
+      "id": "alderaan"
+    },
+    {
+      "name": "Yavin IV",
+      "rotation_period": "24",
+      "orbital_period": "4818",
+      "diameter": "10200",
+      "climate": "temperate, tropical",
+      "gravity": "1 standard",
+      "terrain": "jungle, rainforests",
+      "surface_water": "8",
+      "population": "1000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "created": "2014-12-10T11:37:19.144000Z",
+      "edited": "2014-12-20T20:58:18.421000Z",
+      "url": "http://localhost:5000/api/planets/3/",
+      "id": "yavin-iv"
+    },
+    {
+      "name": "Hoth",
+      "rotation_period": "23",
+      "orbital_period": "549",
+      "diameter": "7200",
+      "climate": "frozen",
+      "gravity": "1.1 standard",
+      "terrain": "tundra, ice caves, mountain ranges",
+      "surface_water": "100",
+      "population": "unknown",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/2/"
+      ],
+      "created": "2014-12-10T11:39:13.934000Z",
+      "edited": "2014-12-20T20:58:18.423000Z",
+      "url": "http://localhost:5000/api/planets/4/",
+      "id": "hoth"
+    },
+    {
+      "name": "Dagobah",
+      "rotation_period": "23",
+      "orbital_period": "341",
+      "diameter": "8900",
+      "climate": "murky",
+      "gravity": "N/A",
+      "terrain": "swamp, jungles",
+      "surface_water": "8",
+      "population": "unknown",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T11:42:22.590000Z",
+      "edited": "2014-12-20T20:58:18.425000Z",
+      "url": "http://localhost:5000/api/planets/5/",
+      "id": "dagobah"
+    },
+    {
+      "name": "Bespin",
+      "rotation_period": "12",
+      "orbital_period": "5110",
+      "diameter": "118000",
+      "climate": "temperate",
+      "gravity": "1.5 (surface), 1 standard (Cloud City)",
+      "terrain": "gas giant",
+      "surface_water": "0",
+      "population": "6000000",
+      "residents": [
+        "http://localhost:5000/api/people/26/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/2/"
+      ],
+      "created": "2014-12-10T11:43:55.240000Z",
+      "edited": "2014-12-20T20:58:18.427000Z",
+      "url": "http://localhost:5000/api/planets/6/",
+      "id": "bespin"
+    },
+    {
+      "name": "Endor",
+      "rotation_period": "18",
+      "orbital_period": "402",
+      "diameter": "4900",
+      "climate": "temperate",
+      "gravity": "0.85 standard",
+      "terrain": "forests, mountains, lakes",
+      "surface_water": "8",
+      "population": "30000000",
+      "residents": [
+        "http://localhost:5000/api/people/30/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-10T11:50:29.349000Z",
+      "edited": "2014-12-20T20:58:18.429000Z",
+      "url": "http://localhost:5000/api/planets/7/",
+      "id": "endor"
+    },
+    {
+      "name": "Naboo",
+      "rotation_period": "26",
+      "orbital_period": "312",
+      "diameter": "12120",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "grassy hills, swamps, forests, mountains",
+      "surface_water": "12",
+      "population": "4500000000",
+      "residents": [
+        "http://localhost:5000/api/people/3/",
+        "http://localhost:5000/api/people/21/",
+        "http://localhost:5000/api/people/35/",
+        "http://localhost:5000/api/people/36/",
+        "http://localhost:5000/api/people/37/",
+        "http://localhost:5000/api/people/38/",
+        "http://localhost:5000/api/people/39/",
+        "http://localhost:5000/api/people/42/",
+        "http://localhost:5000/api/people/60/",
+        "http://localhost:5000/api/people/61/",
+        "http://localhost:5000/api/people/66/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T11:52:31.066000Z",
+      "edited": "2014-12-20T20:58:18.430000Z",
+      "url": "http://localhost:5000/api/planets/8/",
+      "id": "naboo"
+    },
+    {
+      "name": "Coruscant",
+      "rotation_period": "24",
+      "orbital_period": "368",
+      "diameter": "12240",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "cityscape, mountains",
+      "surface_water": "unknown",
+      "population": "1000000000000",
+      "residents": [
+        "http://localhost:5000/api/people/34/",
+        "http://localhost:5000/api/people/55/",
+        "http://localhost:5000/api/people/74/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T11:54:13.921000Z",
+      "edited": "2014-12-20T20:58:18.432000Z",
+      "url": "http://localhost:5000/api/planets/9/",
+      "id": "coruscant"
+    },
+    {
+      "name": "Kamino",
+      "rotation_period": "27",
+      "orbital_period": "463",
+      "diameter": "19720",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "ocean",
+      "surface_water": "100",
+      "population": "1000000000",
+      "residents": [
+        "http://localhost:5000/api/people/22/",
+        "http://localhost:5000/api/people/72/",
+        "http://localhost:5000/api/people/73/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-10T12:45:06.577000Z",
+      "edited": "2014-12-20T20:58:18.434000Z",
+      "url": "http://localhost:5000/api/planets/10/",
+      "id": "kamino"
+    },
+    {
+      "name": "Geonosis",
+      "rotation_period": "30",
+      "orbital_period": "256",
+      "diameter": "11370",
+      "climate": "temperate, arid",
+      "gravity": "0.9 standard",
+      "terrain": "rock, desert, mountain, barren",
+      "surface_water": "5",
+      "population": "100000000000",
+      "residents": [
+        "http://localhost:5000/api/people/63/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-10T12:47:22.350000Z",
+      "edited": "2014-12-20T20:58:18.437000Z",
+      "url": "http://localhost:5000/api/planets/11/",
+      "id": "geonosis"
+    },
+    {
+      "name": "Utapau",
+      "rotation_period": "27",
+      "orbital_period": "351",
+      "diameter": "12900",
+      "climate": "temperate, arid, windy",
+      "gravity": "1 standard",
+      "terrain": "scrublands, savanna, canyons, sinkholes",
+      "surface_water": "0.9",
+      "population": "95000000",
+      "residents": [
+        "http://localhost:5000/api/people/83/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T12:49:01.491000Z",
+      "edited": "2014-12-20T20:58:18.439000Z",
+      "url": "http://localhost:5000/api/planets/12/",
+      "id": "utapau"
+    },
+    {
+      "name": "Mustafar",
+      "rotation_period": "36",
+      "orbital_period": "412",
+      "diameter": "4200",
+      "climate": "hot",
+      "gravity": "1 standard",
+      "terrain": "volcanoes, lava rivers, mountains, caves",
+      "surface_water": "0",
+      "population": "20000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T12:50:16.526000Z",
+      "edited": "2014-12-20T20:58:18.440000Z",
+      "url": "http://localhost:5000/api/planets/13/",
+      "id": "mustafar"
+    },
+    {
+      "name": "Kashyyyk",
+      "rotation_period": "26",
+      "orbital_period": "381",
+      "diameter": "12765",
+      "climate": "tropical",
+      "gravity": "1 standard",
+      "terrain": "jungle, forests, lakes, rivers",
+      "surface_water": "60",
+      "population": "45000000",
+      "residents": [
+        "http://localhost:5000/api/people/13/",
+        "http://localhost:5000/api/people/80/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:32:00.124000Z",
+      "edited": "2014-12-20T20:58:18.442000Z",
+      "url": "http://localhost:5000/api/planets/14/",
+      "id": "kashyyyk"
+    },
+    {
+      "name": "Polis Massa",
+      "rotation_period": "24",
+      "orbital_period": "590",
+      "diameter": "0",
+      "climate": "artificial temperate ",
+      "gravity": "0.56 standard",
+      "terrain": "airless asteroid",
+      "surface_water": "0",
+      "population": "1000000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:33:46.405000Z",
+      "edited": "2014-12-20T20:58:18.444000Z",
+      "url": "http://localhost:5000/api/planets/15/",
+      "id": "polis-massa"
+    },
+    {
+      "name": "Mygeeto",
+      "rotation_period": "12",
+      "orbital_period": "167",
+      "diameter": "10088",
+      "climate": "frigid",
+      "gravity": "1 standard",
+      "terrain": "glaciers, mountains, ice canyons",
+      "surface_water": "unknown",
+      "population": "19000000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:43:39.139000Z",
+      "edited": "2014-12-20T20:58:18.446000Z",
+      "url": "http://localhost:5000/api/planets/16/",
+      "id": "mygeeto"
+    },
+    {
+      "name": "Felucia",
+      "rotation_period": "34",
+      "orbital_period": "231",
+      "diameter": "9100",
+      "climate": "hot, humid",
+      "gravity": "0.75 standard",
+      "terrain": "fungus forests",
+      "surface_water": "unknown",
+      "population": "8500000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:44:50.397000Z",
+      "edited": "2014-12-20T20:58:18.447000Z",
+      "url": "http://localhost:5000/api/planets/17/",
+      "id": "felucia"
+    },
+    {
+      "name": "Cato Neimoidia",
+      "rotation_period": "25",
+      "orbital_period": "278",
+      "diameter": "0",
+      "climate": "temperate, moist",
+      "gravity": "1 standard",
+      "terrain": "mountains, fields, forests, rock arches",
+      "surface_water": "unknown",
+      "population": "10000000",
+      "residents": [
+        "http://localhost:5000/api/people/33/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:46:28.704000Z",
+      "edited": "2014-12-20T20:58:18.449000Z",
+      "url": "http://localhost:5000/api/planets/18/",
+      "id": "cato-neimoidia"
+    },
+    {
+      "name": "Saleucami",
+      "rotation_period": "26",
+      "orbital_period": "392",
+      "diameter": "14920",
+      "climate": "hot",
+      "gravity": "unknown",
+      "terrain": "caves, desert, mountains, volcanoes",
+      "surface_water": "unknown",
+      "population": "1400000000",
+      "residents": [],
+      "films": [
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T13:47:46.874000Z",
+      "edited": "2014-12-20T20:58:18.450000Z",
+      "url": "http://localhost:5000/api/planets/19/",
+      "id": "saleucami"
+    },
+    {
+      "name": "Stewjon",
+      "rotation_period": "unknown",
+      "orbital_period": "unknown",
+      "diameter": "0",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "grass",
+      "surface_water": "unknown",
+      "population": "unknown",
+      "residents": [
+        "http://localhost:5000/api/people/10/"
+      ],
+      "films": [],
+      "created": "2014-12-10T16:16:26.566000Z",
+      "edited": "2014-12-20T20:58:18.452000Z",
+      "url": "http://localhost:5000/api/planets/20/",
+      "id": "stewjon"
+    },
+    {
+      "name": "Eriadu",
+      "rotation_period": "24",
+      "orbital_period": "360",
+      "diameter": "13490",
+      "climate": "polluted",
+      "gravity": "1 standard",
+      "terrain": "cityscape",
+      "surface_water": "unknown",
+      "population": "22000000000",
+      "residents": [
+        "http://localhost:5000/api/people/12/"
+      ],
+      "films": [],
+      "created": "2014-12-10T16:26:54.384000Z",
+      "edited": "2014-12-20T20:58:18.454000Z",
+      "url": "http://localhost:5000/api/planets/21/",
+      "id": "eriadu"
+    },
+    {
+      "name": "Corellia",
+      "rotation_period": "25",
+      "orbital_period": "329",
+      "diameter": "11000",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "plains, urban, hills, forests",
+      "surface_water": "70",
+      "population": "3000000000",
+      "residents": [
+        "http://localhost:5000/api/people/14/",
+        "http://localhost:5000/api/people/18/"
+      ],
+      "films": [],
+      "created": "2014-12-10T16:49:12.453000Z",
+      "edited": "2014-12-20T20:58:18.456000Z",
+      "url": "http://localhost:5000/api/planets/22/",
+      "id": "corellia"
+    },
+    {
+      "name": "Rodia",
+      "rotation_period": "29",
+      "orbital_period": "305",
+      "diameter": "7549",
+      "climate": "hot",
+      "gravity": "1 standard",
+      "terrain": "jungles, oceans, urban, swamps",
+      "surface_water": "60",
+      "population": "1300000000",
+      "residents": [
+        "http://localhost:5000/api/people/15/"
+      ],
+      "films": [],
+      "created": "2014-12-10T17:03:28.110000Z",
+      "edited": "2014-12-20T20:58:18.458000Z",
+      "url": "http://localhost:5000/api/planets/23/",
+      "id": "rodia"
+    },
+    {
+      "name": "Nal Hutta",
+      "rotation_period": "87",
+      "orbital_period": "413",
+      "diameter": "12150",
+      "climate": "temperate",
+      "gravity": "1 standard",
+      "terrain": "urban, oceans, swamps, bogs",
+      "surface_water": "unknown",
+      "population": "7000000000",
+      "residents": [
+        "http://localhost:5000/api/people/16/"
+      ],
+      "films": [],
+      "created": "2014-12-10T17:11:29.452000Z",
+      "edited": "2014-12-20T20:58:18.460000Z",
+      "url": "http://localhost:5000/api/planets/24/",
+      "id": "nal-hutta"
+    }
+  ],
+  "starships": [
+    {
+      "name": "CR90 corvette",
+      "model": "CR90 corvette",
+      "manufacturer": "Corellian Engineering Corporation",
+      "cost_in_credits": "3500000",
+      "length": "150",
+      "max_atmosphering_speed": "950",
+      "crew": "30-165",
+      "passengers": "600",
+      "cargo_capacity": "3000000",
+      "consumables": "1 year",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "60",
+      "starship_class": "corvette",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/3/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-10T14:20:33.369000Z",
+      "edited": "2014-12-20T21:23:49.867000Z",
+      "url": "http://localhost:5000/api/starships/2/",
+      "id": "cr90-corvette"
+    },
+    {
+      "name": "Star Destroyer",
+      "model": "Imperial I-class Star Destroyer",
+      "manufacturer": "Kuat Drive Yards",
+      "cost_in_credits": "150000000",
+      "length": "1,600",
+      "max_atmosphering_speed": "975",
+      "crew": "47,060",
+      "passengers": "n/a",
+      "cargo_capacity": "36000000",
+      "consumables": "2 years",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "60",
+      "starship_class": "Star Destroyer",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-10T15:08:19.848000Z",
+      "edited": "2014-12-20T21:23:49.870000Z",
+      "url": "http://localhost:5000/api/starships/3/",
+      "id": "star-destroyer"
+    },
+    {
+      "name": "Sentinel-class landing craft",
+      "model": "Sentinel-class landing craft",
+      "manufacturer": "Sienar Fleet Systems, Cyngus Spaceworks",
+      "cost_in_credits": "240000",
+      "length": "38",
+      "max_atmosphering_speed": "1000",
+      "crew": "5",
+      "passengers": "75",
+      "cargo_capacity": "180000",
+      "consumables": "1 month",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "70",
+      "starship_class": "landing craft",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "created": "2014-12-10T15:48:00.586000Z",
+      "edited": "2014-12-20T21:23:49.873000Z",
+      "url": "http://localhost:5000/api/starships/5/",
+      "id": "sentinel-class-landing-craft"
+    },
+    {
+      "name": "Death Star",
+      "model": "DS-1 Orbital Battle Station",
+      "manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
+      "cost_in_credits": "1000000000000",
+      "length": "120000",
+      "max_atmosphering_speed": "n/a",
+      "crew": "342,953",
+      "passengers": "843,342",
+      "cargo_capacity": "1000000000000",
+      "consumables": "3 years",
+      "hyperdrive_rating": "4.0",
+      "MGLT": "10",
+      "starship_class": "Deep Space Mobile Battlestation",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "created": "2014-12-10T16:36:50.509000Z",
+      "edited": "2014-12-20T21:26:24.783000Z",
+      "url": "http://localhost:5000/api/starships/9/",
+      "id": "death-star"
+    },
+    {
+      "name": "Millennium Falcon",
+      "model": "YT-1300 light freighter",
+      "manufacturer": "Corellian Engineering Corporation",
+      "cost_in_credits": "100000",
+      "length": "34.37",
+      "max_atmosphering_speed": "1050",
+      "crew": "4",
+      "passengers": "6",
+      "cargo_capacity": "100000",
+      "consumables": "2 months",
+      "hyperdrive_rating": "0.5",
+      "MGLT": "75",
+      "starship_class": "Light freighter",
+      "pilots": [
+        "http://localhost:5000/api/people/13/",
+        "http://localhost:5000/api/people/14/",
+        "http://localhost:5000/api/people/25/",
+        "http://localhost:5000/api/people/31/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-10T16:59:45.094000Z",
+      "edited": "2014-12-20T21:23:49.880000Z",
+      "url": "http://localhost:5000/api/starships/10/",
+      "id": "millennium-falcon"
+    },
+    {
+      "name": "Y-wing",
+      "model": "BTL Y-wing",
+      "manufacturer": "Koensayr Manufacturing",
+      "cost_in_credits": "134999",
+      "length": "14",
+      "max_atmosphering_speed": "1000km",
+      "crew": "2",
+      "passengers": "0",
+      "cargo_capacity": "110",
+      "consumables": "1 week",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "80",
+      "starship_class": "assault starfighter",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-12T11:00:39.817000Z",
+      "edited": "2014-12-20T21:23:49.883000Z",
+      "url": "http://localhost:5000/api/starships/11/",
+      "id": "y-wing"
+    },
+    {
+      "name": "X-wing",
+      "model": "T-65 X-wing",
+      "manufacturer": "Incom Corporation",
+      "cost_in_credits": "149999",
+      "length": "12.5",
+      "max_atmosphering_speed": "1050",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "110",
+      "consumables": "1 week",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "100",
+      "starship_class": "Starfighter",
+      "pilots": [
+        "http://localhost:5000/api/people/1/",
+        "http://localhost:5000/api/people/9/",
+        "http://localhost:5000/api/people/18/",
+        "http://localhost:5000/api/people/19/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/1/",
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-12T11:19:05.340000Z",
+      "edited": "2014-12-20T21:23:49.886000Z",
+      "url": "http://localhost:5000/api/starships/12/",
+      "id": "x-wing"
+    },
+    {
+      "name": "TIE Advanced x1",
+      "model": "Twin Ion Engine Advanced x1",
+      "manufacturer": "Sienar Fleet Systems",
+      "cost_in_credits": "unknown",
+      "length": "9.2",
+      "max_atmosphering_speed": "1200",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "150",
+      "consumables": "5 days",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "105",
+      "starship_class": "Starfighter",
+      "pilots": [
+        "http://localhost:5000/api/people/4/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/1/"
+      ],
+      "created": "2014-12-12T11:21:32.991000Z",
+      "edited": "2014-12-20T21:23:49.889000Z",
+      "url": "http://localhost:5000/api/starships/13/",
+      "id": "tie-advanced-x1"
+    },
+    {
+      "name": "Executor",
+      "model": "Executor-class star dreadnought",
+      "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
+      "cost_in_credits": "1143350000",
+      "length": "19000",
+      "max_atmosphering_speed": "n/a",
+      "crew": "279,144",
+      "passengers": "38000",
+      "cargo_capacity": "250000000",
+      "consumables": "6 years",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "40",
+      "starship_class": "Star dreadnought",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-15T12:31:42.547000Z",
+      "edited": "2014-12-20T21:23:49.893000Z",
+      "url": "http://localhost:5000/api/starships/15/",
+      "id": "executor"
+    },
+    {
+      "name": "Rebel transport",
+      "model": "GR-75 medium transport",
+      "manufacturer": "Gallofree Yards, Inc.",
+      "cost_in_credits": "unknown",
+      "length": "90",
+      "max_atmosphering_speed": "650",
+      "crew": "6",
+      "passengers": "90",
+      "cargo_capacity": "19000000",
+      "consumables": "6 months",
+      "hyperdrive_rating": "4.0",
+      "MGLT": "20",
+      "starship_class": "Medium transport",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-15T12:34:52.264000Z",
+      "edited": "2014-12-20T21:23:49.895000Z",
+      "url": "http://localhost:5000/api/starships/17/",
+      "id": "rebel-transport"
+    },
+    {
+      "name": "Slave 1",
+      "model": "Firespray-31-class patrol and attack",
+      "manufacturer": "Kuat Systems Engineering",
+      "cost_in_credits": "unknown",
+      "length": "21.5",
+      "max_atmosphering_speed": "1000",
+      "crew": "1",
+      "passengers": "6",
+      "cargo_capacity": "70000",
+      "consumables": "1 month",
+      "hyperdrive_rating": "3.0",
+      "MGLT": "70",
+      "starship_class": "Patrol craft",
+      "pilots": [
+        "http://localhost:5000/api/people/22/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-15T13:00:56.332000Z",
+      "edited": "2014-12-20T21:23:49.897000Z",
+      "url": "http://localhost:5000/api/starships/21/",
+      "id": "slave-1"
+    },
+    {
+      "name": "Imperial shuttle",
+      "model": "Lambda-class T-4a shuttle",
+      "manufacturer": "Sienar Fleet Systems",
+      "cost_in_credits": "240000",
+      "length": "20",
+      "max_atmosphering_speed": "850",
+      "crew": "6",
+      "passengers": "20",
+      "cargo_capacity": "80000",
+      "consumables": "2 months",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "50",
+      "starship_class": "Armed government transport",
+      "pilots": [
+        "http://localhost:5000/api/people/1/",
+        "http://localhost:5000/api/people/13/",
+        "http://localhost:5000/api/people/14/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-15T13:04:47.235000Z",
+      "edited": "2014-12-20T21:23:49.900000Z",
+      "url": "http://localhost:5000/api/starships/22/",
+      "id": "imperial-shuttle"
+    },
+    {
+      "name": "EF76 Nebulon-B escort frigate",
+      "model": "EF76 Nebulon-B escort frigate",
+      "manufacturer": "Kuat Drive Yards",
+      "cost_in_credits": "8500000",
+      "length": "300",
+      "max_atmosphering_speed": "800",
+      "crew": "854",
+      "passengers": "75",
+      "cargo_capacity": "6000000",
+      "consumables": "2 years",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "40",
+      "starship_class": "Escort ship",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/2/",
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-15T13:06:30.813000Z",
+      "edited": "2014-12-20T21:23:49.902000Z",
+      "url": "http://localhost:5000/api/starships/23/",
+      "id": "ef76-nebulon-b-escort-frigate"
+    },
+    {
+      "name": "Calamari Cruiser",
+      "model": "MC80 Liberty type Star Cruiser",
+      "manufacturer": "Mon Calamari shipyards",
+      "cost_in_credits": "104000000",
+      "length": "1200",
+      "max_atmosphering_speed": "n/a",
+      "crew": "5400",
+      "passengers": "1200",
+      "cargo_capacity": "unknown",
+      "consumables": "2 years",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "60",
+      "starship_class": "Star Cruiser",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-18T10:54:57.804000Z",
+      "edited": "2014-12-20T21:23:49.904000Z",
+      "url": "http://localhost:5000/api/starships/27/",
+      "id": "calamari-cruiser"
+    },
+    {
+      "name": "A-wing",
+      "model": "RZ-1 A-wing Interceptor",
+      "manufacturer": "Alliance Underground Engineering, Incom Corporation",
+      "cost_in_credits": "175000",
+      "length": "9.6",
+      "max_atmosphering_speed": "1300",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "40",
+      "consumables": "1 week",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "120",
+      "starship_class": "Starfighter",
+      "pilots": [
+        "http://localhost:5000/api/people/29/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-18T11:16:34.542000Z",
+      "edited": "2014-12-20T21:23:49.907000Z",
+      "url": "http://localhost:5000/api/starships/28/",
+      "id": "a-wing"
+    },
+    {
+      "name": "B-wing",
+      "model": "A/SF-01 B-wing starfighter",
+      "manufacturer": "Slayn & Korpil",
+      "cost_in_credits": "220000",
+      "length": "16.9",
+      "max_atmosphering_speed": "950",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "45",
+      "consumables": "1 week",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "91",
+      "starship_class": "Assault Starfighter",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/3/"
+      ],
+      "created": "2014-12-18T11:18:04.763000Z",
+      "edited": "2014-12-20T21:23:49.909000Z",
+      "url": "http://localhost:5000/api/starships/29/",
+      "id": "b-wing"
+    },
+    {
+      "name": "Republic Cruiser",
+      "model": "Consular-class cruiser",
+      "manufacturer": "Corellian Engineering Corporation",
+      "cost_in_credits": "unknown",
+      "length": "115",
+      "max_atmosphering_speed": "900",
+      "crew": "9",
+      "passengers": "16",
+      "cargo_capacity": "unknown",
+      "consumables": "unknown",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "unknown",
+      "starship_class": "Space cruiser",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/4/"
+      ],
+      "created": "2014-12-19T17:01:31.488000Z",
+      "edited": "2014-12-20T21:23:49.912000Z",
+      "url": "http://localhost:5000/api/starships/31/",
+      "id": "republic-cruiser"
+    },
+    {
+      "name": "Droid control ship",
+      "model": "Lucrehulk-class Droid Control Ship",
+      "manufacturer": "Hoersch-Kessel Drive, Inc.",
+      "cost_in_credits": "unknown",
+      "length": "3170",
+      "max_atmosphering_speed": "n/a",
+      "crew": "175",
+      "passengers": "139000",
+      "cargo_capacity": "4000000000",
+      "consumables": "500 days",
+      "hyperdrive_rating": "2.0",
+      "MGLT": "unknown",
+      "starship_class": "Droid control ship",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-19T17:04:06.323000Z",
+      "edited": "2014-12-20T21:23:49.915000Z",
+      "url": "http://localhost:5000/api/starships/32/",
+      "id": "droid-control-ship"
+    },
+    {
+      "name": "Naboo fighter",
+      "model": "N-1 starfighter",
+      "manufacturer": "Theed Palace Space Vessel Engineering Corps",
+      "cost_in_credits": "200000",
+      "length": "11",
+      "max_atmosphering_speed": "1100",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "65",
+      "consumables": "7 days",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "unknown",
+      "starship_class": "Starfighter",
+      "pilots": [
+        "http://localhost:5000/api/people/11/",
+        "http://localhost:5000/api/people/35/",
+        "http://localhost:5000/api/people/60/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/4/",
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-19T17:39:17.582000Z",
+      "edited": "2014-12-20T21:23:49.917000Z",
+      "url": "http://localhost:5000/api/starships/39/",
+      "id": "naboo-fighter"
+    },
+    {
+      "name": "Naboo Royal Starship",
+      "model": "J-type 327 Nubian royal starship",
+      "manufacturer": "Theed Palace Space Vessel Engineering Corps, Nubia Star Drives",
+      "cost_in_credits": "unknown",
+      "length": "76",
+      "max_atmosphering_speed": "920",
+      "crew": "8",
+      "passengers": "unknown",
+      "cargo_capacity": "unknown",
+      "consumables": "unknown",
+      "hyperdrive_rating": "1.8",
+      "MGLT": "unknown",
+      "starship_class": "yacht",
+      "pilots": [
+        "http://localhost:5000/api/people/39/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/4/"
+      ],
+      "created": "2014-12-19T17:45:03.506000Z",
+      "edited": "2014-12-20T21:23:49.919000Z",
+      "url": "http://localhost:5000/api/starships/40/",
+      "id": "naboo-royal-starship"
+    },
+    {
+      "name": "Scimitar",
+      "model": "Star Courier",
+      "manufacturer": "Republic Sienar Systems",
+      "cost_in_credits": "55000000",
+      "length": "26.5",
+      "max_atmosphering_speed": "1180",
+      "crew": "1",
+      "passengers": "6",
+      "cargo_capacity": "2500000",
+      "consumables": "30 days",
+      "hyperdrive_rating": "1.5",
+      "MGLT": "unknown",
+      "starship_class": "Space Transport",
+      "pilots": [
+        "http://localhost:5000/api/people/44/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/4/"
+      ],
+      "created": "2014-12-20T09:39:56.116000Z",
+      "edited": "2014-12-20T21:23:49.922000Z",
+      "url": "http://localhost:5000/api/starships/41/",
+      "id": "scimitar"
+    },
+    {
+      "name": "J-type diplomatic barge",
+      "model": "J-type diplomatic barge",
+      "manufacturer": "Theed Palace Space Vessel Engineering Corps, Nubia Star Drives",
+      "cost_in_credits": "2000000",
+      "length": "39",
+      "max_atmosphering_speed": "2000",
+      "crew": "5",
+      "passengers": "10",
+      "cargo_capacity": "unknown",
+      "consumables": "1 year",
+      "hyperdrive_rating": "0.7",
+      "MGLT": "unknown",
+      "starship_class": "Diplomatic barge",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-20T11:05:51.237000Z",
+      "edited": "2014-12-20T21:23:49.925000Z",
+      "url": "http://localhost:5000/api/starships/43/",
+      "id": "j-type-diplomatic-barge"
+    },
+    {
+      "name": "AA-9 Coruscant freighter",
+      "model": "Botajef AA-9 Freighter-Liner",
+      "manufacturer": "Botajef Shipyards",
+      "cost_in_credits": "unknown",
+      "length": "390",
+      "max_atmosphering_speed": "unknown",
+      "crew": "unknown",
+      "passengers": "30000",
+      "cargo_capacity": "unknown",
+      "consumables": "unknown",
+      "hyperdrive_rating": "unknown",
+      "MGLT": "unknown",
+      "starship_class": "freighter",
+      "pilots": [],
+      "films": [
+        "http://localhost:5000/api/films/5/"
+      ],
+      "created": "2014-12-20T17:24:23.509000Z",
+      "edited": "2014-12-20T21:23:49.928000Z",
+      "url": "http://localhost:5000/api/starships/47/",
+      "id": "aa-9-coruscant-freighter"
+    },
+    {
+      "name": "Jedi starfighter",
+      "model": "Delta-7 Aethersprite-class interceptor",
+      "manufacturer": "Kuat Systems Engineering",
+      "cost_in_credits": "180000",
+      "length": "8",
+      "max_atmosphering_speed": "1150",
+      "crew": "1",
+      "passengers": "0",
+      "cargo_capacity": "60",
+      "consumables": "7 days",
+      "hyperdrive_rating": "1.0",
+      "MGLT": "unknown",
+      "starship_class": "Starfighter",
+      "pilots": [
+        "http://localhost:5000/api/people/10/",
+        "http://localhost:5000/api/people/58/"
+      ],
+      "films": [
+        "http://localhost:5000/api/films/5/",
+        "http://localhost:5000/api/films/6/"
+      ],
+      "created": "2014-12-20T17:35:23.906000Z",
+      "edited": "2014-12-20T21:23:49.930000Z",
+      "url": "http://localhost:5000/api/starships/48/",
+      "id": "jedi-starfighter"
     }
   ]
 }

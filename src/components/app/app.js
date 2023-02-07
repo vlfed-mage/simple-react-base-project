@@ -7,6 +7,7 @@ const appStyles = css`
     margin: 50px auto;
     width: 100%;
     max-width: 1440px;
+    display: flex;
 
     .container {
         background: #1d1e26;

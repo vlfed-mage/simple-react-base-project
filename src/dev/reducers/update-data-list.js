@@ -4,24 +4,24 @@ const updateDataList = (name, state, action) => {
     switch (action.type) {
         case `FETCH_${ name.toUpperCase() }_SUCCESS`:
             return {
-                people: payload,
+                [name]: payload,
                 loading: false,
                 error: null
             };
         case `FETCH_${ name.toUpperCase() }_REQUEST`:
             return {
-                people: null,
+                [name]: null,
                 loading: true,
                 error: null
             };
         case `FETCH_${ name.toUpperCase() }_FAILURE`:
             return {
-                people: null,
+                [name]: null,
                 loading: false,
                 error: payload
             };
         default:
-            return state.peopleList
+            return state[`${name}List`]
     }
 }
 

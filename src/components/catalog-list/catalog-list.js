@@ -7,9 +7,10 @@ import * as actions from '../../dev/actions';
 import LoadingIndicator from '../loading-indicator';
 import ErrorIndicator from '../error-indicator';
 
-const CatalogList = ({ name, people, loading, error, ...rest }) => {
+const CatalogList = (state) => {
     const { getCollection } = storeServices();
-    const { dataLoaded, dataRequested, dataError } = rest;
+    const { name, dataLoaded, dataRequested, dataError } = state;
+    const { [name]: data, loading, error } = state[`${name}List`];
 
     useEffect(() => {
         dataRequested(name);
@@ -26,7 +27,7 @@ const CatalogList = ({ name, people, loading, error, ...rest }) => {
         return <ErrorIndicator />
     }
 
-    const peopleList = people.map(({ id, name }) => {
+    const dataList = data.map(({ id, name }) => {
         return (
             <li
                 key={ id }
@@ -38,13 +39,13 @@ const CatalogList = ({ name, people, loading, error, ...rest }) => {
 
     return (
         <ul>
-            { peopleList }
+            { dataList }
         </ul>
     );
 };
 
-const mapStateToProps = ({ peopleList: { people, loading, error } }) => {
-    return { people, loading, error };
+const mapStateToProps = ({ peopleList, planetsList, starshipsList }) => {
+    return { peopleList, planetsList, starshipsList };
 };
 
 export default connect(mapStateToProps, actions)(CatalogList);

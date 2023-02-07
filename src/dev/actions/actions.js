@@ -1,33 +1,25 @@
-import * as actionTypes from '../action-types';
-
-const {
-    FETCH_PEOPLE_SUCCESS,
-    FETCH_PEOPLE_REQUEST,
-    FETCH_PEOPLE_FAILURE
-} = actionTypes,
-
-peopleLoaded = (newPeople) => {
+const dataLoaded = (name, newPeople) => {
     return {
-        type: FETCH_PEOPLE_SUCCESS,
+        type: `FETCH_${ name.toUpperCase() }_SUCCESS`,
         payload: newPeople
     }
 },
 
-peopleRequested = () => {
+dataRequested = (name) => {
     return {
-        type: FETCH_PEOPLE_REQUEST
+        type: `FETCH_${ name.toUpperCase() }_REQUEST`
     }
 },
 
-peopleError = (error) => {
+dataError = (name, error) => {
     return {
-        type: FETCH_PEOPLE_FAILURE,
+        type: `FETCH_${ name.toUpperCase() }_FAILURE`,
         payload: error
     }
 }
 
 export {
-    peopleRequested,
-    peopleLoaded,
-    peopleError
+    dataRequested,
+    dataLoaded,
+    dataError
 };

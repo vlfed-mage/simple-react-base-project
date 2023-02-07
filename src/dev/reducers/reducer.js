@@ -1,11 +1,11 @@
 import initialState from '../initial-state';
-import updatePeopleList from './update-people-list';
+import updateDataList from './update-data-list';
 
 const reducer = (state = initialState, action) => {
     return {
-        peopleList: updatePeopleList(state, action),
-        planetsList: state.planetsList,
-        starshipsList: state.starshipsList
+        peopleList: updateDataList('people', state, action),
+        planetsList: updateDataList('planets', state, action),
+        starshipsList: updateDataList('starships', state, action),
     }
 }
 

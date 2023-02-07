@@ -1,9 +1,8 @@
-import React, {useContext} from 'react';
-
+import React from 'react';
 import { css } from '@emotion/css';
+
 import ErrorIndicator from '../error-indicator';
 import LoadingIndicator from '../loading-indicator';
-import storeServiceContext from '../../dev/store-service-context';
 
 const appStyles = css`
     margin: 50px auto;
@@ -19,11 +18,6 @@ const appStyles = css`
 `;
 
 const App = () => {
-    const { getCollection } = useContext(storeServiceContext);
-
-    getCollection('products')
-        .then((data) => console.log(data))
-
     return (
         <div className={ appStyles }>
             <ErrorIndicator />

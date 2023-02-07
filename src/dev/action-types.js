@@ -1,0 +1,5 @@
+const FETCH_PEOPLE = 'FETCH_PEOPLE'
+
+export {
+    FETCH_PEOPLE,
+}

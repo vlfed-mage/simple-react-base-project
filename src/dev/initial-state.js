@@ -5,12 +5,12 @@ const initialState = {
         error: null,
     },
     planetsList: {
-        people: null,
+        planets: null,
         loading: true,
         error: null,
     },
     starshipsList: {
-        people: null,
+        starships: null,
         loading: true,
         error: null,
     },

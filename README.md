@@ -1,4 +1,4 @@
-# Simple react base project
+# Webpack 5 boilerplate
 
 ![NODE Version Support](https://img.shields.io/node/v-lts/webpack?style=for-the-badge)
 

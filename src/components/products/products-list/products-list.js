@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import storeServices from '../../../dev/services';
 import * as actions from '../../../dev/actions';
 
-import LoadingIndicator from '../../loading-indicator';
-import ErrorIndicator from '../../error-indicator';
-import ProductCard from '../products-card'
+import LoadingIndicator from '../../../components/loading-indicator';
+import ErrorIndicator from '../../../components/error-indicator';
+import ProductCard from '../../../components/products/products-card'
 
 const ProductsList = (props) => {
     const { getCollection } = storeServices();
@@ -20,31 +20,22 @@ const ProductsList = (props) => {
             .catch((e) => dataError(category, e))
     }, []);
 
-    if (loading) {
-        return <LoadingIndicator />
-    }
-
-    if (error) {
-        return <ErrorIndicator />
-    }
-
-    const productsList = products.map((product) => {
-        const { id } = product;
-        return (
-            <li
-                key={ id }
-                className='products-list-item' >
-                <ProductCard
-                    product={ product }
-                    category={ category }/>
-            </li>
-        )
-    });
-
     return (
-        <ul className='products-list'>
-            { productsList }
-        </ul>
+        <>
+            { loading && <LoadingIndicator /> }
+            { error && <ErrorIndicator /> }
+
+            { !loading && !error && (
+                products.map((product) => {
+                    const { id } = product;
+                    return (
+                        <ProductCard
+                            product={ product }
+                            category={ category }/>
+                    )
+                })
+            ) }
+        </>
     );
 };
 

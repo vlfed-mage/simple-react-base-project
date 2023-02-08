@@ -8,11 +8,11 @@ const ProductsCard = ({ product, category }) => {
 
     return (
         <div className='product'>
-            <span className='product__image' href='#'>
-                <ImageView
-                    product={ product }
-                    category={ category } />
-            </span>
+            {/*<span className='product__image' href='#'>*/}
+            {/*    <ImageView*/}
+            {/*        product={ product }*/}
+            {/*        category={ category } />*/}
+            {/*</span>*/}
             <span className='product__name' href='#'>
                 { name }
             </span>

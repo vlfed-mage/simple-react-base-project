@@ -1,13 +1,14 @@
 import React from 'react';
 import { css } from '@emotion/css';
 
-import CatalogList from '../catalog-list';
+import ProductsList from '../products/products-list';
 
 const appStyles = css`
     margin: 50px auto;
     width: 100%;
     max-width: 1440px;
-    display: flex;
+    display: grid;
+    grid-gap: 24px;
 
     .container {
         background: #1d1e26;
@@ -20,9 +21,9 @@ const appStyles = css`
 const App = () => {
     return (
         <div className={ appStyles }>
-            <CatalogList name='people' />
-            <CatalogList name='planets' />
-            <CatalogList name='starships' />
+            <ProductsList of='people' />
+            <ProductsList of='planets' />
+            <ProductsList of='starships' />
         </div>
     );
 };

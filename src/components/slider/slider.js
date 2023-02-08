@@ -1,59 +1,42 @@
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-
-import storeServices from '../../dev/services';
-import * as actions from '../../dev/actions';
-
-import LoadingIndicator from '../loading-indicator';
-import ErrorIndicator from '../error-indicator';
-import ProductCard from '../products/products-card'
-
+import React, {Children, cloneElement, useEffect, useState} from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import ProductsCard from '../products/products-card';
+import ProductsListContainer from '../../containers/products-list-container';
+import { connect } from 'react-redux';
+import LoadingIndicator from '../loading-indicator';
+import ErrorIndicator from '../error-indicator';
+
 const Slider = (props) => {
-    const { getCollection } = storeServices();
-    const { of: category, dataLoaded, dataRequested, dataError } = props;
-    const { [category]: products, loading, error } = props[`${category}List`];
-
-    useEffect(() => {
-        dataRequested(category);
-        getCollection(category)
-            .then((response) => dataLoaded(category, response))
-            .catch((e) => dataError(category, e))
-    }, []);
-
-    if (loading) {
-        return <LoadingIndicator />
-    }
-
-    if (error) {
-        return <ErrorIndicator />
-    }
-
-    const productsList = products.map((product) => {
-        const { id } = product;
-        return (
-            <SwiperSlide key={ id }>
-                <ProductCard
-                    product={ product }
-                    category={ category }/>
-            </SwiperSlide>
-        )
-    });
+    const { of: category } = props;
+    const { [category]: items, loading, error } = props[`${category}List`];
 
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={ [Navigation, Pagination, Scrollbar, A11y] }
             spaceBetween={50}
             slidesPerView={5}
             navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')} >
+            pagination={ { clickable: true } }
+            scrollbar={ { draggable: true } }
+            onSwiper={ (swiper) => console.log(swiper) }
+            onSlideChange={ () => console.log('slide change') } >
 
-            { productsList }
+            <ProductsListContainer { ...props } >
+                {
+                    items && items.map((item) => {
+                        const { id } = item;
+                        return (
+                            <SwiperSlide key={ id } >
+                                <ProductsCard
+                                    item={ item }
+                                    category={ category } />
+                            </SwiperSlide>
+                        )
+                    })
+                }
+            </ProductsListContainer>
 
         </Swiper>
     );
@@ -63,4 +46,4 @@ const mapStateToProps = ({ peopleList, planetsList, starshipsList }) => {
     return { peopleList, planetsList, starshipsList };
 };
 
-export default connect(mapStateToProps, actions)(Slider);
+export default connect(mapStateToProps)(Slider);

@@ -2,9 +2,9 @@ import React from 'react';
 
 import ImageView from '../../image-view';
 
-const ProductsCard = ({ product, category }) => {
+const ProductsCard = ({ item, category }) => {
 
-    const { name } = product;
+    const { name } = item;
 
     return (
         <div className='product'>

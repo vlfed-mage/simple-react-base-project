@@ -1,7 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/css';
 
-import ProductsList from '../products/products-list';
 import Slider from '../slider';
 import Catalog from '../catalog';
 
@@ -23,10 +22,8 @@ const appStyles = css`
 const App = () => {
     return (
         <div className={ appStyles }>
-            {/*<Slider of='people' />*/}
-            <Catalog of='people' />
-            {/*<ProductsList of='planets' />*/}
-            {/*<ProductsList of='starships' />*/}
+            <Slider of='people' />
+            {/*<Catalog of='people' />*/}
         </div>
     );
 };

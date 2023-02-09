@@ -2,16 +2,15 @@
 //== Colors
 
 $base:                  #fff !default;
-$grayBase:              #000 !default;
+$grayBase:              #1d1e26 !default;
 
 
-$gray:                  #aaa !default;
+$gray:                  #2a2c37 !default;
 
 $themeColor:            #007aff !default;
+$brandPrimary:          #FFEE58 !default;
 
-$brandPrimary:          #399EFE !default;
-$brandYellow:           #FEDC01 !default;
-$brandGreen:            #80BA27 !default;
+$brandGreen:            #50fa7b !default;
 $brandRed:              #DF1921 !default;
 
 $overlayColor:          rgba(0, 0, 0, 0.5) !default;
@@ -20,8 +19,8 @@ $boxShadow:             0 4px 16px rgba(0, 0, 0, 0.16) !default;
 
 //== Reset
 
-$bodyBg:                $base !default;
-$textColor:             $grayBase !default;
+$bodyBg:                $grayBase !default;
+$textColor:             $brandPrimary !default;
 $linkColor:             $brandPrimary !default;
 
 $borderColor:           $gray !default;
@@ -85,7 +84,7 @@ $min-l:                 $screen_min_1440;
     //== Form templates
     --formGridGap: 12px;
     --formBorderRadius: 8px;
-    --formControlHeight: 40px;
+    --formControlHeight: 48px;
     --checkboxSize: 26px;
     --formSectionDivider: 1;
 
@@ -104,7 +103,7 @@ $min-l:                 $screen_min_1440;
 
     //== Header templates
     --mainHeaderHeight: 56px;
-    --secondaryHeaderHeight: 24px;
+    --secondaryHeaderHeight: 44px;
 
     //== Catalog grid
     --catalogGrid: 2;
@@ -113,23 +112,4 @@ $min-l:                 $screen_min_1440;
         //== Catalog grid
         --catalogGrid: 3;
     }
-
-    @media (min-width: $screen_min_1080) {
-        //== Form templates
-        --formControlHeight: 56px;
-
-        //== Section templates
-        --sectionsGap: 40px;
-
-        //== Header templates
-        --mainHeaderHeight: 80px;
-    }
-
-    @media (min-width: $screen_min_1320) {
-        //== Catalog grid
-        --catalogGrid: 4;
-    }
-
-    --globalTopIndent: var(--mainHeaderHeight);
-    --globalRightIndent: 0;
 }

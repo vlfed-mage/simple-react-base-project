@@ -10,7 +10,7 @@ import swiperParams from '../../dev/swiper-params';
 
 const Slider = (props) => {
     const { category } = props,
-    { [category]: items } = props[`${category}List`];
+    { [category]: items, loading } = props[`${category}List`];
 
     const params = swiperParams[category];
 
@@ -26,7 +26,7 @@ const Slider = (props) => {
                                     item={ item }
                                     category={ category } />
                             </SwiperSlide>
-                        )
+                        );
                     })
                 }
             </ProductsListContainer>

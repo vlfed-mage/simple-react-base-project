@@ -27,13 +27,13 @@ const Header = () => {
             </div>
             <div className='header__bottom container'>
                 <div className='logo'>
-                    LOGO
+                    <img src={ require('../../images/logo.png') } alt='Star wars logo'/>
                 </div>
 
                 <div className='search'>
                     <form action='' method=''>
                         <input type='text' name='' placeholder='Search here...' />
-                        <button type='submit' name=''>S</button>
+                        <button className='button' type='submit' name=''>Search</button>
                     </form>
                 </div>
             </div>

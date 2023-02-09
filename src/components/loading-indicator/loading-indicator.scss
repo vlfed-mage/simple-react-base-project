@@ -25,12 +25,12 @@
 }
 
 .ldio-zoew23s6me div:nth-child(1) {
-    border-color: #46300d;
+    border-color: $brandPrimary;
     animation-delay: 0s;
 }
 
 .ldio-zoew23s6me div:nth-child(2) {
-    border-color: #a00816;
+    border-color: $brandRed;
     animation-delay: -0.5s;
 }
 
@@ -40,6 +40,10 @@
     display: inline-block;
     overflow: hidden;
     background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .ldio-zoew23s6me {

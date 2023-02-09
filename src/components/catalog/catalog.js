@@ -1,33 +1,37 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import ProductsCard from '../products/products-card';
 import ProductsListContainer from '../../containers/products-list-container';
-import store from '../../dev/store';
-
-const CatalogListCollection = (props) => {
-    const { items, category } = props;
-
-    return items.map((item) => {
-        const { id } = item;
-        return (
-            <li
-                key={ id }
-                className='catalog-item' >
-                <ProductsCard
-                    item={ item }
-                    category={ category } />
-            </li>
-        )
-    })
-}
 
 const Catalog = (props) => {
+    const { category } = props,
+    { [category]: items } = props[`${category}List`];
+
     return (
         <ul className='catalog'>
             <ProductsListContainer { ...props } >
-                <CatalogListCollection />
+                {
+                    items && items.map((item) => {
+                        const { id } = item;
+                        return (
+                            <li
+                                key={ id }
+                                className='catalog-item' >
+                                <ProductsCard
+                                    item={ item }
+                                    category={ category } />
+                            </li>
+                        )
+                    })
+                }
             </ProductsListContainer>
         </ul>
     )
-}
+};
 
-export default Catalog;
+const mapStateToProps = ({ peopleList, planetsList, starshipsList }) => {
+    return { peopleList, planetsList, starshipsList };
+};
+
+export default connect(mapStateToProps)(Catalog);

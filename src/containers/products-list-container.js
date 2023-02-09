@@ -1,4 +1,4 @@
-import React, { useEffect, Children, cloneElement } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import storeServices from '../dev/services';
@@ -9,17 +9,15 @@ import ErrorIndicator from '../components/error-indicator';
 
 const ProductsListContainer = (props) => {
     const { getCollection } = storeServices();
-    const { of: category, dataLoaded, dataRequested, dataError } = props;
+    const { category, dataLoaded, dataRequested, dataError } = props;
     const { [category]: items, loading, error } = props[`${category}List`];
 
     useEffect(() => {
         dataRequested(category);
         getCollection(category)
             .then((response) => dataLoaded(category, response))
-            .catch((e) => dataError(category, e))
+            .catch((error) => dataError(category, error))
     }, []);
-
-    console.log(loading, error, items)
 
     return (
         <>
@@ -27,13 +25,7 @@ const ProductsListContainer = (props) => {
             { error && <ErrorIndicator /> }
 
             { !loading && !error && (
-                Children.map(
-                    props.children,
-                    (child) => cloneElement(
-                        child,
-                        { items: items, category: category }
-                    )
-                )
+                props.children
             ) }
         </>
     );

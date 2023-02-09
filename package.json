@@ -4,7 +4,7 @@
   "description": "Webpack 5 boilerplate for everyone",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"webpack serve --config base.config.js\" \"json-server --watch db.json --port 5000 --delay 100000 --routes routes.json\"",
+    "start": "concurrently \"webpack serve --config base.config.js\" \"json-server --watch db.json --port 5000 --delay 1000 --routes routes.json\"",
     "build": "export NODE_ENV=production&& webpack --config base.config.js"
   },
   "browserslist": [

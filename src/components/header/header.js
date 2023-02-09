@@ -1,34 +1,25 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-const Header = () => {
+import Menu from '../menu'
+import Languages from '../languages'
+import {NavLink} from 'react-router-dom';
+
+const Header = ( {admin: { menu, languages }} ) => {
     return (
         <header className='header' id='header'>
-            <div className='header__top'>
-                <div className='container'>
-                    <ul className='menu'>
-                        <li><a href='#'>Stores</a></li>
-                        <li><a href='#'>For clients</a></li>
-                        <li><a href='#'>Services</a></li>
-                    </ul>
+            <div className='header__top container'>
+                <Menu menu={ menu } />
+                <Languages languages={ languages } />
 
-                    <div className='languages'>
-                        <a className='active' href='#'>
-                            ENG
-                        </a>
-                        <a href='#'>
-                            UA
-                        </a>
-                    </div>
-
-                    <div className='user hide-screen-max-1080'>
-                        <b>Hello, User</b>
-                    </div>
+                <div className='user hide-screen-max-1080'>
+                    <b>Hello, User</b>
                 </div>
             </div>
             <div className='header__bottom container'>
-                <div className='logo'>
+                <NavLink to='/' className='logo'>
                     <img src={ require('../../images/logo.png') } alt='Star wars logo'/>
-                </div>
+                </NavLink>
 
                 <div className='search'>
                     <form action='' method=''>
@@ -41,4 +32,8 @@ const Header = () => {
     );
 };
 
-export default Header;
+const mapStateToProps = ({ admin }) => {
+    return { admin };
+}
+
+export default connect(mapStateToProps)(Header);

@@ -2,7 +2,6 @@
     position: sticky;
     top: calc(var(--secondaryHeaderHeight) * -1);
     z-index: 60;
-    background: $base;
     border-bottom: 1px solid $borderColor;
     flex-shrink: 0;
 
@@ -17,25 +16,46 @@
         left: 0;
         opacity: 0;
         visibility: hidden;
+        margin: 0 0 0 auto;
+
+        form {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin: 0 16px 0 0;
+            }
+        }
     }
 
     .menu {
         margin: 0 auto 0 0;
+        display: flex;
+        gap: 16px
     }
 
     .user {
         margin: 0 0 0 40px;
     }
 
+    .logo {
+        width: 100%;
+        max-width: 125px;
+    }
+
     &__top {
         display: flex;
         background: $borderColor;
         height: var(--secondaryHeaderHeight);
+        border-bottom: 1px solid $brandRed;
     }
 
     &__bottom {
         position: relative;
         height: var(--mainHeaderHeight);
+        background: $borderColor;
+        border-bottom: 1px solid $brandPrimary;
+        min-height: 88px;
     }
 
     @media (min-width: $screen_min_1080) {

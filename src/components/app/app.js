@@ -3,6 +3,7 @@ import { css } from '@emotion/css';
 
 import Slider from '../slider';
 import Catalog from '../catalog';
+import Header from '../header';
 
 const appStyles = css`
     margin: 50px auto;
@@ -10,22 +11,16 @@ const appStyles = css`
     max-width: 1440px;
     display: grid;
     grid-gap: 24px;
-    
-    .container {
-        background: #1d1e26;
-        border: 4px solid #9580ff;
-        border-radius: 6px;
-        padding: 25px;
-    }
 `;
 
 const App = () => {
     return (
         <div className={ appStyles }>
+            <Header />
             <Slider category='people' />
             <Slider category='planets' />
             <Slider category='starships' />
-            <Catalog category='planets' />
+            <Catalog category='people' />
         </div>
     );
 };

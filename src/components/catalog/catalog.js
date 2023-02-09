@@ -22,7 +22,7 @@ const Catalog = (props) => {
                                     item={ item }
                                     category={ category } />
                             </li>
-                        )
+                        );
                     })
                 }
             </ProductsListContainer>

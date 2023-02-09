@@ -1,4 +1,5 @@
 import React from "react";
+
 import { getImgUrl, onImageError } from '../helpers';
 
 const ImageView = ({ item, category }) => {

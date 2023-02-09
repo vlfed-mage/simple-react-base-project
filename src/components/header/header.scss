@@ -44,7 +44,6 @@
     }
 
     &__top {
-        display: flex;
         background: $borderColor;
         height: var(--secondaryHeaderHeight);
         border-bottom: 1px solid $brandRed;

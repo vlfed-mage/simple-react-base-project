@@ -6,6 +6,7 @@ const reducer = (state = initialState, action) => {
         peopleList: updateDataList('people', state, action),
         planetsList: updateDataList('planets', state, action),
         starshipsList: updateDataList('starships', state, action),
+        admin: state.admin
     }
 }
 

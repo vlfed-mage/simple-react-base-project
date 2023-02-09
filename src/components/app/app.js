@@ -21,6 +21,8 @@ const App = () => {
             <Slider category='planets' />
             <Slider category='starships' />
             <Catalog category='people' />
+            <Catalog category='planets' />
+            <Catalog category='starships' />
         </div>
     );
 };

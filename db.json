@@ -621,40 +621,6 @@
   ],
   "planets": [
     {
-      "name": "Tatooine",
-      "rotation_period": "23",
-      "orbital_period": "304",
-      "diameter": "10465",
-      "climate": "arid",
-      "gravity": "1 standard",
-      "terrain": "desert",
-      "surface_water": "1",
-      "population": "200000",
-      "residents": [
-        "http://localhost:5000/api/people/1/",
-        "http://localhost:5000/api/people/2/",
-        "http://localhost:5000/api/people/4/",
-        "http://localhost:5000/api/people/6/",
-        "http://localhost:5000/api/people/7/",
-        "http://localhost:5000/api/people/8/",
-        "http://localhost:5000/api/people/9/",
-        "http://localhost:5000/api/people/11/",
-        "http://localhost:5000/api/people/43/",
-        "http://localhost:5000/api/people/62/"
-      ],
-      "films": [
-        "http://localhost:5000/api/films/1/",
-        "http://localhost:5000/api/films/3/",
-        "http://localhost:5000/api/films/4/",
-        "http://localhost:5000/api/films/5/",
-        "http://localhost:5000/api/films/6/"
-      ],
-      "created": "2014-12-09T13:50:49.641000Z",
-      "edited": "2014-12-20T20:58:18.411000Z",
-      "url": "http://localhost:5000/api/planets/1/",
-      "id": "tatooine"
-    },
-    {
       "name": "Alderaan",
       "rotation_period": "24",
       "orbital_period": "364",
@@ -1043,25 +1009,6 @@
       "id": "saleucami"
     },
     {
-      "name": "Stewjon",
-      "rotation_period": "unknown",
-      "orbital_period": "unknown",
-      "diameter": "0",
-      "climate": "temperate",
-      "gravity": "1 standard",
-      "terrain": "grass",
-      "surface_water": "unknown",
-      "population": "unknown",
-      "residents": [
-        "http://localhost:5000/api/people/10/"
-      ],
-      "films": [],
-      "created": "2014-12-10T16:16:26.566000Z",
-      "edited": "2014-12-20T20:58:18.452000Z",
-      "url": "http://localhost:5000/api/planets/20/",
-      "id": "stewjon"
-    },
-    {
       "name": "Eriadu",
       "rotation_period": "24",
       "orbital_period": "360",
@@ -1079,117 +1026,9 @@
       "edited": "2014-12-20T20:58:18.454000Z",
       "url": "http://localhost:5000/api/planets/21/",
       "id": "eriadu"
-    },
-    {
-      "name": "Corellia",
-      "rotation_period": "25",
-      "orbital_period": "329",
-      "diameter": "11000",
-      "climate": "temperate",
-      "gravity": "1 standard",
-      "terrain": "plains, urban, hills, forests",
-      "surface_water": "70",
-      "population": "3000000000",
-      "residents": [
-        "http://localhost:5000/api/people/14/",
-        "http://localhost:5000/api/people/18/"
-      ],
-      "films": [],
-      "created": "2014-12-10T16:49:12.453000Z",
-      "edited": "2014-12-20T20:58:18.456000Z",
-      "url": "http://localhost:5000/api/planets/22/",
-      "id": "corellia"
-    },
-    {
-      "name": "Rodia",
-      "rotation_period": "29",
-      "orbital_period": "305",
-      "diameter": "7549",
-      "climate": "hot",
-      "gravity": "1 standard",
-      "terrain": "jungles, oceans, urban, swamps",
-      "surface_water": "60",
-      "population": "1300000000",
-      "residents": [
-        "http://localhost:5000/api/people/15/"
-      ],
-      "films": [],
-      "created": "2014-12-10T17:03:28.110000Z",
-      "edited": "2014-12-20T20:58:18.458000Z",
-      "url": "http://localhost:5000/api/planets/23/",
-      "id": "rodia"
-    },
-    {
-      "name": "Nal Hutta",
-      "rotation_period": "87",
-      "orbital_period": "413",
-      "diameter": "12150",
-      "climate": "temperate",
-      "gravity": "1 standard",
-      "terrain": "urban, oceans, swamps, bogs",
-      "surface_water": "unknown",
-      "population": "7000000000",
-      "residents": [
-        "http://localhost:5000/api/people/16/"
-      ],
-      "films": [],
-      "created": "2014-12-10T17:11:29.452000Z",
-      "edited": "2014-12-20T20:58:18.460000Z",
-      "url": "http://localhost:5000/api/planets/24/",
-      "id": "nal-hutta"
     }
   ],
   "starships": [
-    {
-      "name": "CR90 corvette",
-      "model": "CR90 corvette",
-      "manufacturer": "Corellian Engineering Corporation",
-      "cost_in_credits": "3500000",
-      "length": "150",
-      "max_atmosphering_speed": "950",
-      "crew": "30-165",
-      "passengers": "600",
-      "cargo_capacity": "3000000",
-      "consumables": "1 year",
-      "hyperdrive_rating": "2.0",
-      "MGLT": "60",
-      "starship_class": "corvette",
-      "pilots": [],
-      "films": [
-        "http://localhost:5000/api/films/1/",
-        "http://localhost:5000/api/films/3/",
-        "http://localhost:5000/api/films/6/"
-      ],
-      "created": "2014-12-10T14:20:33.369000Z",
-      "edited": "2014-12-20T21:23:49.867000Z",
-      "url": "http://localhost:5000/api/starships/2/",
-      "id": "cr90-corvette"
-    },
-    {
-      "name": "Star Destroyer",
-      "model": "Imperial I-class Star Destroyer",
-      "manufacturer": "Kuat Drive Yards",
-      "cost_in_credits": "150000000",
-      "length": "1,600",
-      "max_atmosphering_speed": "975",
-      "crew": "47,060",
-      "passengers": "n/a",
-      "cargo_capacity": "36000000",
-      "consumables": "2 years",
-      "hyperdrive_rating": "2.0",
-      "MGLT": "60",
-      "starship_class": "Star Destroyer",
-      "pilots": [],
-      "films": [
-        "http://localhost:5000/api/films/1/",
-        "http://localhost:5000/api/films/2/",
-        "http://localhost:5000/api/films/3/"
-      ],
-      "created": "2014-12-10T15:08:19.848000Z",
-      "edited": "2014-12-20T21:23:49.870000Z",
-      "url": "http://localhost:5000/api/starships/3/",
-      "id": "star-destroyer"
-    },
     {
       "name": "Sentinel-class landing craft",
       "model": "Sentinel-class landing craft",
@@ -1371,30 +1210,6 @@
       "id": "executor"
     },
     {
-      "name": "Rebel transport",
-      "model": "GR-75 medium transport",
-      "manufacturer": "Gallofree Yards, Inc.",
-      "cost_in_credits": "unknown",
-      "length": "90",
-      "max_atmosphering_speed": "650",
-      "crew": "6",
-      "passengers": "90",
-      "cargo_capacity": "19000000",
-      "consumables": "6 months",
-      "hyperdrive_rating": "4.0",
-      "MGLT": "20",
-      "starship_class": "Medium transport",
-      "pilots": [],
-      "films": [
-        "http://localhost:5000/api/films/2/",
-        "http://localhost:5000/api/films/3/"
-      ],
-      "created": "2014-12-15T12:34:52.264000Z",
-      "edited": "2014-12-20T21:23:49.895000Z",
-      "url": "http://localhost:5000/api/starships/17/",
-      "id": "rebel-transport"
-    },
-    {
       "name": "Slave 1",
       "model": "Firespray-31-class patrol and attack",
       "manufacturer": "Kuat Systems Engineering",
@@ -1565,31 +1380,6 @@
       "edited": "2014-12-20T21:23:49.912000Z",
       "url": "http://localhost:5000/api/starships/31/",
       "id": "republic-cruiser"
-    },
-    {
-      "name": "Droid control ship",
-      "model": "Lucrehulk-class Droid Control Ship",
-      "manufacturer": "Hoersch-Kessel Drive, Inc.",
-      "cost_in_credits": "unknown",
-      "length": "3170",
-      "max_atmosphering_speed": "n/a",
-      "crew": "175",
-      "passengers": "139000",
-      "cargo_capacity": "4000000000",
-      "consumables": "500 days",
-      "hyperdrive_rating": "2.0",
-      "MGLT": "unknown",
-      "starship_class": "Droid control ship",
-      "pilots": [],
-      "films": [
-        "http://localhost:5000/api/films/4/",
-        "http://localhost:5000/api/films/5/",
-        "http://localhost:5000/api/films/6/"
-      ],
-      "created": "2014-12-19T17:04:06.323000Z",
-      "edited": "2014-12-20T21:23:49.915000Z",
-      "url": "http://localhost:5000/api/starships/32/",
-      "id": "droid-control-ship"
     },
     {
       "name": "Naboo fighter",

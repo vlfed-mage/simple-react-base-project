@@ -1,11 +1,11 @@
 import React from "react";
 import { getImgUrl, onImageError } from '../helpers';
 
-const ImageView = ({ product, category }) => {
-    const imageName = `${ product.name }-image`;
+const ImageView = ({ item, category }) => {
+    const imageName = `${ item.name }-image`;
 
     return (
-        <img src={ getImgUrl(product, category) }
+        <img src={ getImgUrl(item, category) }
              onError={ (e) => onImageError(e) }
              alt= { imageName } />
     )

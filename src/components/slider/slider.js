@@ -1,22 +1,32 @@
-import React, {Children, cloneElement, useEffect, useState} from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
+
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import ProductsCard from '../products/products-card';
 import ProductsListContainer from '../../containers/products-list-container';
-import { connect } from 'react-redux';
-import LoadingIndicator from '../loading-indicator';
-import ErrorIndicator from '../error-indicator';
 
 const Slider = (props) => {
-    const { of: category } = props;
-    const { [category]: items, loading, error } = props[`${category}List`];
+    const { category } = props,
+    { [category]: items } = props[`${category}List`];
 
     return (
         <Swiper
             modules={ [Navigation, Pagination, Scrollbar, A11y] }
-            spaceBetween={50}
-            slidesPerView={5}
+            breakpoints={{
+                640: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+                1440: {
+                    slidesPerView: 5,
+                },
+            }}
+            spaceBetween={ 16 }
+            slidesPerView={ 2 }
             navigation
             pagination={ { clickable: true } }
             scrollbar={ { draggable: true } }

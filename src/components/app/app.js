@@ -22,8 +22,10 @@ const appStyles = css`
 const App = () => {
     return (
         <div className={ appStyles }>
-            <Slider of='people' />
-            {/*<Catalog of='people' />*/}
+            <Slider category='people' />
+            <Slider category='planets' />
+            <Slider category='starships' />
+            <Catalog category='planets' />
         </div>
     );
 };

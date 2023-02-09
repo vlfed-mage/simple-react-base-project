@@ -5,8 +5,8 @@ _extractId = (url) => {
     return url.match(regex)[1];
 },
 
-getImgUrl = (product, category) => {
-    const id = _extractId(product.url)
+getImgUrl = (item, category) => {
+    const id = _extractId(item.url)
     const group = category === 'people' ? 'characters' : category;
     return `${_bodyImgUrl}${group}/${id}.jpg`
 },

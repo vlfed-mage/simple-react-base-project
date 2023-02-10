@@ -4,21 +4,21 @@ import { connect } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import ProductsCard from '../products/products-card';
-import ProductsListContainer from '../../containers/products-list-container';
 
+import ProductsListContainer from '../../containers/products-list-container';
 import swiperParams from '../../dev/swiper-params';
 
 const Slider = (props) => {
     const { category } = props,
-    { [category]: items, loading } = props[`${category}List`];
+    { [category]: items } = props[`${category}List`];
 
     const params = swiperParams[category];
 
     return (
-        <Swiper { ...params } >
-            <ProductsListContainer { ...props } >
+        <ProductsListContainer { ...props } >
+            <Swiper { ...params } >
                 {
-                    items && items.map((item) => {
+                    items?.map((item) => {
                         const { id } = item;
                         return (
                             <SwiperSlide key={ id } >
@@ -29,9 +29,8 @@ const Slider = (props) => {
                         );
                     })
                 }
-            </ProductsListContainer>
-
-        </Swiper>
+            </Swiper>
+        </ProductsListContainer>
     );
 };
 

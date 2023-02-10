@@ -12,7 +12,7 @@ const Catalog = (props) => {
         <ul className='catalog'>
             <ProductsListContainer { ...props } >
                 {
-                    items && items.map((item) => {
+                    items?.map((item) => {
                         const { id } = item;
                         return (
                             <li

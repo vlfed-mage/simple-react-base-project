@@ -13,10 +13,12 @@ const ProductsListContainer = (props) => {
     const { loading, error } = props[`${category}List`];
 
     useEffect(() => {
-        dataRequested(category);
         getCollection(category)
             .then((response) => dataLoaded(category, response))
             .catch((error) => dataError(category, error));
+        return () => {
+            dataRequested(category);
+        }
     }, [category]);
 
     return (

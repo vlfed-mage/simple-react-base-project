@@ -6,7 +6,7 @@ const Languages = ({ languages }) => {
             {
                 languages && languages.map((language) => {
                     return (
-                        <a href='#'>
+                        <a key={ language } href='#'>
                             { language }
                         </a>
                     )

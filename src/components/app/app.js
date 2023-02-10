@@ -3,9 +3,9 @@ import { Route, Routes } from 'react-router-dom';
 import { css } from '@emotion/css';
 
 import Slider from '../slider';
-import Catalog from '../catalog';
 import Header from '../header';
 import People from '../pages/people';
+import Planets from '../pages/planets';
 
 const appStyles = css`
     margin: 50px auto;
@@ -24,6 +24,7 @@ const App = () => {
             <Slider category='starships' />
             <Routes>
                 <Route path='/people' element={ <People /> } />
+                <Route path='/planets' element={ <Planets /> } />
             </Routes>
         </div>
     );

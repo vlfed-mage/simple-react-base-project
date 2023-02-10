@@ -5,9 +5,9 @@ import Slider from '../slider';
 const HomePage = () => {
     return (
         <>
-            <Slider category='people' />
-            <Slider category='planets' />
-            <Slider category='starships' />
+            {/*<Slider category='people' />*/}
+            {/*<Slider category='planets' />*/}
+            {/*<Slider category='starships' />*/}
         </>
     );
 };

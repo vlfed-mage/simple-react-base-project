@@ -17,7 +17,7 @@ const ProductsListContainer = (props) => {
         getCollection(category)
             .then((response) => dataLoaded(category, response))
             .catch((error) => dataError(category, error))
-    }, []);
+    }, [category]);
 
     return (
         <>

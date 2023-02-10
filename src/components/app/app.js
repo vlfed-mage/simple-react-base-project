@@ -2,12 +2,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { css } from '@emotion/css';
 
-import Slider from '../slider';
 import Header from '../header';
-import People from '../pages/people';
-import Planets from '../pages/planets';
-import Starships from '../pages/starships';
 import HomePage from '../pages/home-page';
+import CatalogPage from '../pages/catalog-page';
 
 const appStyles = css`
     margin: 50px auto;
@@ -23,9 +20,9 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='/' element={ <HomePage /> } />
-                <Route path='/people' element={ <People /> } />
-                <Route path='/planets' element={ <Planets /> } />
-                <Route path='/starships' element={ <Starships /> } />
+                <Route path='/people' element={ <CatalogPage /> } />
+                <Route path='/planets' element={ <CatalogPage /> } />
+                <Route path='/starships' element={ <CatalogPage /> } />
             </Routes>
         </div>
     );

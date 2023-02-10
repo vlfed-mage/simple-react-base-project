@@ -6,6 +6,7 @@ import Slider from '../slider';
 import Header from '../header';
 import People from '../pages/people';
 import Planets from '../pages/planets';
+import Starships from '../pages/starships';
 
 const appStyles = css`
     margin: 50px auto;
@@ -25,6 +26,7 @@ const App = () => {
             <Routes>
                 <Route path='/people' element={ <People /> } />
                 <Route path='/planets' element={ <Planets /> } />
+                <Route path='/starships' element={ <Starships /> } />
             </Routes>
         </div>
     );

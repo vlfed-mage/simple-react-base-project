@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { css } from '@emotion/css';
 
 import Loadable from '../loadable';
+import ScrollToTop from '../scroll-to-top'
 
 const Header = Loadable(lazy( () => import('../header') ));
 const HomePage = Loadable(lazy( () => import('../pages/home-page') ));
@@ -19,6 +20,7 @@ const appStyles = css`
 const App = () => {
     return (
         <div className={ appStyles }>
+            <ScrollToTop />
             <Header />
             <Routes>
                 <Route path='/' element={ <HomePage /> } />

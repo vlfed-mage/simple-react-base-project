@@ -6,6 +6,12 @@ html {
     }
 }
 
+.section {
+    overflow: hidden;
+    position: relative;
+    min-height: 240px;
+}
+
 body {
     font-size: $fontSizeBase;
     line-height: $lineHeightBase;

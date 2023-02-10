@@ -34,11 +34,7 @@ const swiperParams = {
         },
         spaceBetween: 4,
         slidesPerView: 2,
-        navigation: {},
-        pagination: { clickable: true },
-        scrollbar: { draggable: true },
-        onSwiper: (swiper) => console.log(swiper),
-        onSlideChange: () => console.log(`slide change`)
+        navigation: {}
     },
     starships: {
         modules: [Navigation, Pagination, Scrollbar, A11y],
@@ -55,11 +51,7 @@ const swiperParams = {
         },
         spaceBetween: 4,
         slidesPerView: 2,
-        navigation: {},
-        pagination: { clickable: true },
-        scrollbar: { draggable: true },
-        onSwiper: (swiper) => console.log(swiper),
-        onSlideChange: () => console.log(`slide change`)
+        navigation: {}
     },
 };
 

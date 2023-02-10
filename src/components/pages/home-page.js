@@ -7,9 +7,15 @@ const Slider = Loadable(lazy( () => import('../slider') ))
 const HomePage = () => {
     return (
         <>
-            <Slider category='people' />
-            <Slider category='planets' />
-            <Slider category='starships' />
+            <section className='section'>
+                <Slider category='people' />
+            </section>
+            <section className='section'>
+                <Slider category='planets' />
+            </section>
+            <section className='section'>
+                <Slider category='starships' />
+            </section>
         </>
     );
 };

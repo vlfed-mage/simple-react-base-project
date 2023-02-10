@@ -10,13 +10,13 @@ import ErrorIndicator from '../components/error-indicator';
 const ProductsListContainer = (props) => {
     const { getCollection } = storeServices();
     const { category, dataLoaded, dataRequested, dataError } = props;
-    const { [category]: items, loading, error } = props[`${category}List`];
+    const { loading, error } = props[`${category}List`];
 
     useEffect(() => {
-        dataRequested(category);
         getCollection(category)
             .then((response) => dataLoaded(category, response))
-            .catch((error) => dataError(category, error))
+            .catch((error) => dataError(category, error));
+        return dataRequested(category);
     }, [category]);
 
     return (

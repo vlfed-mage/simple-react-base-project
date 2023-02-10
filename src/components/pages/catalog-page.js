@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-import Catalog from '../catalog';
+import Loadable from '../loadable';
+
+const Catalog = Loadable(lazy( () => import('../catalog') ))
 
 const People = () => {
     const location = useLocation();
-    const category = location.pathname.match(/([a-z]*)$/)[1];
+    const name = location.pathname.match(/([a-z]*)$/)[1];
 
     return (
-        <div className={ `catalog-page catalog-page--${ category }` }>
+        <div className={`catalog-page catalog-page--${ name }`}>
             <Routes>
-                <Route path='/' element={ <Catalog category={ category } /> } />
+                <Route path='/' element={ <Catalog category={ name } /> } />
             </Routes>
         </div>
     );

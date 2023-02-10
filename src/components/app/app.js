@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { css } from '@emotion/css';
 
-import Header from '../header';
-import HomePage from '../pages/home-page';
-import CatalogPage from '../pages/catalog-page';
+import Loadable from '../loadable';
+
+const Header = Loadable(lazy( () => import('../header') ));
+const HomePage = Loadable(lazy( () => import('../pages/home-page') ));
+const CatalogPage = Loadable(lazy( () => import('../pages/catalog-page') ));
 
 const appStyles = css`
     margin: 50px auto;

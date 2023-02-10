@@ -7,6 +7,7 @@ import Header from '../header';
 import People from '../pages/people';
 import Planets from '../pages/planets';
 import Starships from '../pages/starships';
+import HomePage from '../pages/home-page';
 
 const appStyles = css`
     margin: 50px auto;
@@ -20,10 +21,8 @@ const App = () => {
     return (
         <div className={ appStyles }>
             <Header />
-            <Slider category='people' />
-            <Slider category='planets' />
-            <Slider category='starships' />
             <Routes>
+                <Route path='/' element={ <HomePage /> } />
                 <Route path='/people' element={ <People /> } />
                 <Route path='/planets' element={ <Planets /> } />
                 <Route path='/starships' element={ <Starships /> } />

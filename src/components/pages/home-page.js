@@ -1,21 +1,22 @@
 import React, {lazy} from 'react';
 
 import Loadable from '../loadable';
+import Section from '../section';
 
 const Slider = Loadable(lazy( () => import('../slider') ))
 
 const HomePage = () => {
     return (
         <>
-            <section className='section'>
+            <Section headingText='People'>
                 <Slider category='people' />
-            </section>
-            <section className='section'>
+            </Section>
+            <Section headingText='Planets'>
                 <Slider category='planets' />
-            </section>
-            <section className='section'>
+            </Section>
+            <Section headingText='Starships'>
                 <Slider category='starships' />
-            </section>
+            </Section>
         </>
     );
 };
